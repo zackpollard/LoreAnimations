@@ -33,7 +33,6 @@ public class LoreAnimations extends JavaPlugin implements Listener {
 	public List<Inventory> invlist = new ArrayList<Inventory>();
 	//ItemID, FrameCount
 	public HashMap<Integer, Integer> framecounter = new HashMap<Integer, Integer>();
-	//int framecounter = 0;
 
 	public HashMap<Integer, ArrayList<ArrayList<String>>> animation = new HashMap<Integer, ArrayList<ArrayList<String>>>();
 
@@ -45,13 +44,6 @@ public class LoreAnimations extends JavaPlugin implements Listener {
 	@Override
 	public void onEnable() {
 
-		/*
-		 *  for (World w : getServer().getWorlds()) {
-		 *	 for (Player p : w.getPlayers()) {
-		 *	 	invlist.add(p.getInventory());
-		 *	 }
-		 *}
-		 */
 		for(File file : this.getDataFolder().listFiles()) {
 			
 			if(file.getName().endsWith(".txt")) {
