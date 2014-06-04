@@ -54,9 +54,9 @@ public class LoreAnimations extends JavaPlugin implements Listener {
 		 */
 		for(File file : this.getDataFolder().listFiles()) {
 			
-			if(file.getAbsolutePath().endsWith(".txt")) {
+			if(file.getName().endsWith(".txt")) {
 				
-				String[] split = file.getAbsolutePath().split(".");
+				String[] split = file.getName().split(".");
 				try {
 					int itemid  = Integer.parseInt(split[0]);
 					
