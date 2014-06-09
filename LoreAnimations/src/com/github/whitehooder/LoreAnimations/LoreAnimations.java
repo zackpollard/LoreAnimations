@@ -1,20 +1,5 @@
 package com.github.whitehooder.LoreAnimations;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.UnsupportedEncodingException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-
-import org.bukkit.Material;
-import org.bukkit.World;
-import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
@@ -28,8 +13,13 @@ import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitScheduler;
 
-public class LoreAnimations extends JavaPlugin implements Listener {
+import java.io.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
+public class LoreAnimations extends JavaPlugin implements Listener {
+//Testing IntelliJ Github for later changes.
 	public List<Inventory> invlist = new ArrayList<Inventory>();
 	//ItemID, FrameCount
 	public HashMap<Integer, Integer> framecounter = new HashMap<Integer, Integer>();
